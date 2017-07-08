@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftDependencyInjection_Example' do
+  pod 'SwiftDependencyInjection', :path => '../'
+
+  target 'SwiftDependencyInjection_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
