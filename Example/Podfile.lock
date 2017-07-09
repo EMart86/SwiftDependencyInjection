@@ -1,0 +1,16 @@
+PODS:
+  - SwiftDependencyInjection (0.1.0)
+
+DEPENDENCIES:
+  - SwiftDependencyInjection (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftDependencyInjection:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftDependencyInjection: a06cfe05947943fd2aa0bff294169cd637f4243b
+
+PODFILE CHECKSUM: 855e622c5dcc8678aa93498e69e1afb6468426c9
+
+COCOAPODS: 1.1.1

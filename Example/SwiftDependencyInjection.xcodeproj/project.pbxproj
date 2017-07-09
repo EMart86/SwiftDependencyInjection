@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580BFE4D1F12A5E800AACD08 /* FooModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE4C1F12A5E800AACD08 /* FooModule.swift */; };
+		580BFE4F1F12A74700AACD08 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE4E1F12A74700AACD08 /* Foo.swift */; };
+		580BFE521F12AA4A00AACD08 /* InjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE511F12AA4A00AACD08 /* InjectionTests.swift */; };
+		580BFE551F12B0B500AACD08 /* TestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE531F12AFC300AACD08 /* TestModule.swift */; };
+		580BFE571F12C6E700AACD08 /* DelayInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE561F12C6E700AACD08 /* DelayInjectionTests.swift */; };
+		580BFE591F12CACE00AACD08 /* CanceInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE581F12CACE00AACD08 /* CanceInjectionTests.swift */; };
+		580BFE5B1F12D3B400AACD08 /* Test2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE5A1F12D3B400AACD08 /* Test2Module.swift */; };
+		580BFE5D1F12D4FE00AACD08 /* DependingInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE5C1F12D4FE00AACD08 /* DependingInjectionTests.swift */; };
+		580BFE5F1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8D81AA8D626B921139FB5FD7 /* Pods_SwiftDependencyInjection_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3289E3838A6C3650FC345EDC /* Pods_SwiftDependencyInjection_Example.framework */; };
 		E5203471338DC891762DB107 /* Pods_SwiftDependencyInjection_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B98C609C2B02F839245E4E9 /* Pods_SwiftDependencyInjection_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +39,16 @@
 		1B98C609C2B02F839245E4E9 /* Pods_SwiftDependencyInjection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDependencyInjection_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3289E3838A6C3650FC345EDC /* Pods_SwiftDependencyInjection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDependencyInjection_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527E74B611F9A32589911205 /* Pods-SwiftDependencyInjection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDependencyInjection_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDependencyInjection_Tests/Pods-SwiftDependencyInjection_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		580BFE4C1F12A5E800AACD08 /* FooModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooModule.swift; sourceTree = "<group>"; };
+		580BFE4E1F12A74700AACD08 /* Foo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		580BFE501F12AA4A00AACD08 /* SwiftDependencyInjection_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDependencyInjection_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		580BFE511F12AA4A00AACD08 /* InjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectionTests.swift; sourceTree = "<group>"; };
+		580BFE531F12AFC300AACD08 /* TestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModule.swift; sourceTree = "<group>"; };
+		580BFE561F12C6E700AACD08 /* DelayInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayInjectionTests.swift; sourceTree = "<group>"; };
+		580BFE581F12CACE00AACD08 /* CanceInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanceInjectionTests.swift; sourceTree = "<group>"; };
+		580BFE5A1F12D3B400AACD08 /* Test2Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2Module.swift; sourceTree = "<group>"; };
+		580BFE5C1F12D4FE00AACD08 /* DependingInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependingInjectionTests.swift; sourceTree = "<group>"; };
+		580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependingDelayedInjectionTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftDependencyInjection_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDependencyInjection_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,11 +58,10 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftDependencyInjection_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDependencyInjection_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6724CAE1E90FDF416E665510 /* Pods-SwiftDependencyInjection_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDependencyInjection_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDependencyInjection_Example/Pods-SwiftDependencyInjection_Example.release.xcconfig"; sourceTree = "<group>"; };
-		69C4CED2F8A577EBCFBE73D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		92EE95A01E6F80BBA7A36649 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		AD4F90053C1D4703F0940AE7 /* SwiftDependencyInjection.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftDependencyInjection.podspec; path = ../SwiftDependencyInjection.podspec; sourceTree = "<group>"; };
+		69C4CED2F8A577EBCFBE73D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		92EE95A01E6F80BBA7A36649 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AD4F90053C1D4703F0940AE7 /* SwiftDependencyInjection.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftDependencyInjection.podspec; path = ../SwiftDependencyInjection.podspec; sourceTree = "<group>"; };
 		C5CD394AE54AAAFDD2EC37AC /* Pods-SwiftDependencyInjection_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDependencyInjection_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDependencyInjection_Tests/Pods-SwiftDependencyInjection_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E63C5523F9C77BCF9D42D886 /* Pods-SwiftDependencyInjection_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDependencyInjection_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDependencyInjection_Example/Pods-SwiftDependencyInjection_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,8 +110,10 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftDependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				580BFE4E1F12A74700AACD08 /* Foo.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				580BFE4C1F12A5E800AACD08 /* FooModule.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -115,8 +134,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				580BFE581F12CACE00AACD08 /* CanceInjectionTests.swift */,
+				580BFE511F12AA4A00AACD08 /* InjectionTests.swift */,
+				580BFE561F12C6E700AACD08 /* DelayInjectionTests.swift */,
+				580BFE5C1F12D4FE00AACD08 /* DependingInjectionTests.swift */,
+				580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */,
+				580BFE501F12AA4A00AACD08 /* SwiftDependencyInjection_Tests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -125,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACEA1AFB9204008FA782 /* Info.plist */,
+				580BFE531F12AFC300AACD08 /* TestModule.swift */,
+				580BFE5A1F12D3B400AACD08 /* Test2Module.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -219,7 +245,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -361,7 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580BFE4F1F12A74700AACD08 /* Foo.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				580BFE4D1F12A5E800AACD08 /* FooModule.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +398,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				580BFE591F12CACE00AACD08 /* CanceInjectionTests.swift in Sources */,
+				580BFE521F12AA4A00AACD08 /* InjectionTests.swift in Sources */,
+				580BFE5D1F12D4FE00AACD08 /* DependingInjectionTests.swift in Sources */,
+				580BFE551F12B0B500AACD08 /* TestModule.swift in Sources */,
+				580BFE571F12C6E700AACD08 /* DelayInjectionTests.swift in Sources */,
+				580BFE5F1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift in Sources */,
+				580BFE5B1F12D3B400AACD08 /* Test2Module.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5CD394AE54AAAFDD2EC37AC /* Pods-SwiftDependencyInjection_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -535,7 +570,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/SwiftDependencyInjection_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDependencyInjection_Example.app/SwiftDependencyInjection_Example";
 			};
 			name = Debug;
 		};
@@ -543,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 527E74B611F9A32589911205 /* Pods-SwiftDependencyInjection_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,7 +590,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/SwiftDependencyInjection_Tests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDependencyInjection_Example.app/SwiftDependencyInjection_Example";
 			};
 			name = Release;
 		};

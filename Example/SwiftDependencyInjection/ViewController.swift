@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import SwiftDependencyInjection
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Injectable {
 
+    private var foo: Foo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        Injector.shared.inject(self)
+            .with(type: FooProvider.self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        foo?.itWorks()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    func inject<T>(inject: T) {
+        if let inject = inject as? FooProvider {
+            foo = inject.foo
+        }
+    }
 }
 
