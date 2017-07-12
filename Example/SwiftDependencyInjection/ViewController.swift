@@ -17,7 +17,7 @@ class ViewController: UIViewController, Injectable {
         super.viewDidLoad()
         
         Injector.shared.inject(self)
-            .with(type: FooProvider.self)
+            .with(FooProvider.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {

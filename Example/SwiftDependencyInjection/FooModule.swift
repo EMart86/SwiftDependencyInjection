@@ -14,6 +14,7 @@ protocol FooProvider {
 }
 
 final class FooModule: Module, FooProvider {
+
     weak var delegate: ModuleDelegate?
     
     lazy var foo: Foo = {

@@ -16,6 +16,8 @@
 		580BFE5B1F12D3B400AACD08 /* Test2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE5A1F12D3B400AACD08 /* Test2Module.swift */; };
 		580BFE5D1F12D4FE00AACD08 /* DependingInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE5C1F12D4FE00AACD08 /* DependingInjectionTests.swift */; };
 		580BFE5F1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */; };
+		580BFE631F14089800AACD08 /* MultipleDependingInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE621F14089800AACD08 /* MultipleDependingInjectionTests.swift */; };
+		580BFE651F14091800AACD08 /* Test3Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE641F14091800AACD08 /* Test3Module.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		580BFE5A1F12D3B400AACD08 /* Test2Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2Module.swift; sourceTree = "<group>"; };
 		580BFE5C1F12D4FE00AACD08 /* DependingInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependingInjectionTests.swift; sourceTree = "<group>"; };
 		580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependingDelayedInjectionTests.swift; sourceTree = "<group>"; };
+		580BFE621F14089800AACD08 /* MultipleDependingInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleDependingInjectionTests.swift; sourceTree = "<group>"; };
+		580BFE641F14091800AACD08 /* Test3Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test3Module.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftDependencyInjection_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDependencyInjection_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				580BFE511F12AA4A00AACD08 /* InjectionTests.swift */,
 				580BFE561F12C6E700AACD08 /* DelayInjectionTests.swift */,
 				580BFE5C1F12D4FE00AACD08 /* DependingInjectionTests.swift */,
+				580BFE621F14089800AACD08 /* MultipleDependingInjectionTests.swift */,
 				580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */,
 				580BFE501F12AA4A00AACD08 /* SwiftDependencyInjection_Tests-Bridging-Header.h */,
 			);
@@ -151,6 +156,7 @@
 				607FACEA1AFB9204008FA782 /* Info.plist */,
 				580BFE531F12AFC300AACD08 /* TestModule.swift */,
 				580BFE5A1F12D3B400AACD08 /* Test2Module.swift */,
+				580BFE641F14091800AACD08 /* Test3Module.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -400,6 +406,8 @@
 			files = (
 				580BFE591F12CACE00AACD08 /* CanceInjectionTests.swift in Sources */,
 				580BFE521F12AA4A00AACD08 /* InjectionTests.swift in Sources */,
+				580BFE651F14091800AACD08 /* Test3Module.swift in Sources */,
+				580BFE631F14089800AACD08 /* MultipleDependingInjectionTests.swift in Sources */,
 				580BFE5D1F12D4FE00AACD08 /* DependingInjectionTests.swift in Sources */,
 				580BFE551F12B0B500AACD08 /* TestModule.swift in Sources */,
 				580BFE571F12C6E700AACD08 /* DelayInjectionTests.swift in Sources */,
