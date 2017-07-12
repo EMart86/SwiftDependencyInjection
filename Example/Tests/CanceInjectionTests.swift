@@ -29,7 +29,7 @@ class CancelInjectionTests: XCTestCase, Injectable {
         expectation = expectation(description: "did find Provideable")
         expectation?.isInverted = true
         holder = injector?.inject(self)
-            .with(type: StringProvidable.self)
+            .with(StringProvidable.self)
         holder?.cancel()
         TestModule().provide()
         waitForExpectations(timeout: 5, handler: nil)

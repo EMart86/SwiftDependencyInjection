@@ -14,24 +14,31 @@ public protocol ModuleDelegate: class {
 
 public protocol Module: class, Injectable {
     weak var delegate: ModuleDelegate? { get set }
-    var fullfillmentDescriptors: [FullfillmentDescription]? { get }
-    func add(fullfillmentDescriptor: FullfillmentDescription)
+    func canProvide<T>(type: T.Type) -> Bool
     func provide()
-    func requiresFor<T>(type: T.Type) -> FullfillmentDescription
+    func requires<T>(for type: T.Type) -> FullfillmentDescription?
 }
 
 public extension Module {
-    func provide() {
+    public func provide() {
         Injector.shared + self
     }
     
-    func inject<T>(inject: T) {
+    public func inject<T>(inject: T) {
         delegate?.module(self, didProvide: T.self)
     }
     
-    func requiresFor<T>(type: T.Type) -> FullfillmentDescription {
-        let descriptor = DefaultFullfillmentDescription<T>(type: T.self)
-        add(fullfillmentDescriptor: descriptor)
+    public func requires<T>(for type: T.Type) -> FullfillmentDescription? {
+        guard self is T else {
+            return nil
+        }
+        
+        let descriptor = DefaultDependency<T>(self)
+        Injector.shared.add(descriptor)
         return descriptor
+    }
+    
+    func canProvide<T>(type: T.Type) -> Bool {
+        return self is T
     }
 }

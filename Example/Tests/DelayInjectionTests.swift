@@ -28,7 +28,7 @@ class DelayInjectionTests: XCTestCase, Injectable {
     func testInjection() {
         expectation = expectation(description: "did find Provideable")
         holder = injector?.inject(self)
-            .with(type: StringProvidable.self)
+            .with(StringProvidable.self)
         TestModule().provide()
         waitForExpectations(timeout: 5, handler: nil)
     }

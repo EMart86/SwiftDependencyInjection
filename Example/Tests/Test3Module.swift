@@ -9,25 +9,26 @@
 import Foundation
 import SwiftDependencyInjection
 
-protocol String2Providable {
+protocol String3Providable {
     var test: String { get }
 }
 
-final class Test2Module: Module, String2Providable {
+final class Test3Module: Module, String3Providable {
     weak var delegate: ModuleDelegate?
     var providable: StringProvidable?
-    var fullfillmentDescriptors: [FullfillmentDescription]?
+    var providable2: String2Providable?
     static let defaultText = "Provideable could'nt be inferred"
-    static let correctText = TestModule.defaultText + " - 2"
     
     init() {
-        requires(for: String2Providable.self)?
+        requires(for: String3Providable.self)?
             .this(StringProvidable.self)
+            .this(String2Providable.self)
     }
     
     var test: String {
-        if let providable = providable {
-            return "\(providable.test) - 2"
+        if let providable = providable,
+            let providable2 = providable2 {
+            return "\(providable.test) \(providable2.test) - 3"
         }
         return Test2Module.defaultText
     }
@@ -35,6 +36,9 @@ final class Test2Module: Module, String2Providable {
     func inject<T>(inject: T) {
         if let inject = inject as? StringProvidable {
             providable = inject
+        }
+        if let inject = inject as? String2Providable {
+            providable2 = inject
         }
     }
 }

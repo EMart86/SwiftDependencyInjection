@@ -31,7 +31,7 @@ class DependingInjectionTests: XCTestCase, Injectable {
     func testInjection() {
         expectation = expectation(description: "did find Provideable")
         holder = injector?.inject(self)
-            .with(type: String2Providable.self)
+            .with(String2Providable.self)
         waitForExpectations(timeout: 5, handler: nil)
     }
     

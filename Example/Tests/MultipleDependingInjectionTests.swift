@@ -9,14 +9,14 @@
 import XCTest
 import SwiftDependencyInjection
 
-class InjectionTests: XCTestCase, Injectable {
+class MultipleDependingInjectionTests: XCTestCase, Injectable {
     var injector: Injector?
     var expectation: XCTestExpectation?
     var holder: InjectionHolder?
     
     override func setUp() {
         super.setUp()
-        TestModule().provide()
+        
         injector = Injector.shared
     }
     
@@ -29,12 +29,18 @@ class InjectionTests: XCTestCase, Injectable {
     func testInjection() {
         expectation = expectation(description: "did find Provideable")
         holder = injector?.inject(self)
-            .with(StringProvidable.self)
+            .with(String3Providable.self)
+        Test3Module().provide()
+        Test2Module().provide()
+        TestModule().provide()
         waitForExpectations(timeout: 5, handler: nil)
     }
     
     func inject<T>(inject: T) {
-        if let inject = inject as? StringProvidable {
+        if let inject = inject as? String3Providable {
+            let text = inject.test
+            XCTAssert(text.contains(TestModule.defaultText)
+                && text.contains(Test2Module.correctText))
             expectation?.fulfill()
         }
     }
