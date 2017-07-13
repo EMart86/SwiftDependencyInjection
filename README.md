@@ -28,7 +28,7 @@ eberl_ma@gmx.at, martin.eberl@styria.com
 
 SwiftDependencyInjection is available under the MIT license. See the LICENSE file for more info.
 
-##Usage
+## Usage
 
 1) Implement a module:
 
