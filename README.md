@@ -22,7 +22,7 @@ pod 'SwiftDependencyInjection'
 
 ## Author
 
-eberl_ma@gmx.at, martin.eberl@styria.com
+Martin Eberl, eberl_ma@gmx.at
 
 ## License
 
@@ -200,7 +200,8 @@ final class Lector {
     }
 
     func holdLecture(lectureId: Int) {
-        guard let room = roomProvidable.room(for: lectureId) else {
+        guard let roomProvidable = roomProvidable,
+            let room = roomProvidable.room(for: lectureId) else {
             //hold lecture outside
             return
         }
