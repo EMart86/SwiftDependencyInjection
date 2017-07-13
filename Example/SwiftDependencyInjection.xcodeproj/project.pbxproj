@@ -18,6 +18,9 @@
 		580BFE5F1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */; };
 		580BFE631F14089800AACD08 /* MultipleDependingInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE621F14089800AACD08 /* MultipleDependingInjectionTests.swift */; };
 		580BFE651F14091800AACD08 /* Test3Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE641F14091800AACD08 /* Test3Module.swift */; };
+		580BFE6C1F1740C700AACD08 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE6A1F17407300AACD08 /* Foo.swift */; };
+		580BFE6E1F17419D00AACD08 /* NewObjectCreateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE6D1F17419D00AACD08 /* NewObjectCreateTests.swift */; };
+		580BFE6F1F1741C900AACD08 /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE681F17405700AACD08 /* SingletonTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 		580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependingDelayedInjectionTests.swift; sourceTree = "<group>"; };
 		580BFE621F14089800AACD08 /* MultipleDependingInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleDependingInjectionTests.swift; sourceTree = "<group>"; };
 		580BFE641F14091800AACD08 /* Test3Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test3Module.swift; sourceTree = "<group>"; };
+		580BFE681F17405700AACD08 /* SingletonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonTests.swift; sourceTree = "<group>"; };
+		580BFE6A1F17407300AACD08 /* Foo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		580BFE6D1F17419D00AACD08 /* NewObjectCreateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewObjectCreateTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftDependencyInjection_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDependencyInjection_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 				580BFE5C1F12D4FE00AACD08 /* DependingInjectionTests.swift */,
 				580BFE621F14089800AACD08 /* MultipleDependingInjectionTests.swift */,
 				580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */,
+				580BFE681F17405700AACD08 /* SingletonTests.swift */,
+				580BFE6D1F17419D00AACD08 /* NewObjectCreateTests.swift */,
 				580BFE501F12AA4A00AACD08 /* SwiftDependencyInjection_Tests-Bridging-Header.h */,
 			);
 			path = Tests;
@@ -157,6 +165,7 @@
 				580BFE531F12AFC300AACD08 /* TestModule.swift */,
 				580BFE5A1F12D3B400AACD08 /* Test2Module.swift */,
 				580BFE641F14091800AACD08 /* Test3Module.swift */,
+				580BFE6A1F17407300AACD08 /* Foo.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -404,8 +413,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580BFE6E1F17419D00AACD08 /* NewObjectCreateTests.swift in Sources */,
+				580BFE6F1F1741C900AACD08 /* SingletonTests.swift in Sources */,
 				580BFE591F12CACE00AACD08 /* CanceInjectionTests.swift in Sources */,
 				580BFE521F12AA4A00AACD08 /* InjectionTests.swift in Sources */,
+				580BFE6C1F1740C700AACD08 /* Foo.swift in Sources */,
 				580BFE651F14091800AACD08 /* Test3Module.swift in Sources */,
 				580BFE631F14089800AACD08 /* MultipleDependingInjectionTests.swift in Sources */,
 				580BFE5D1F12D4FE00AACD08 /* DependingInjectionTests.swift in Sources */,
