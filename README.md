@@ -129,6 +129,10 @@ final class RoomProviderModule: Module, RoomProvidable {
     weak var lectureRepository: LectureRepository?
 
     init() {
+        //this is how you tell the the Injector, what types of provideables are
+        //required for e.g. the RoomProvideable
+        //The Roomprovideable is not being provided, unless it's dependencies can 
+        //be resolved
         requires(for: RoomProvidable)?
             .this(LectureProvidable.self)
           //.this(... .self) we would add here more dependencies if we needed to
@@ -161,6 +165,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 
+        //we wont to register the Moduels
+        //The Injector has a built in dependency resolve, 
+        //so it resolved the conflict, that the RoomProvider is 
+        //first instantiated, even though it needs the LecutureProvider Module.
+        //When the LectureProviderModule provides it's Provideables, the RoomProvider is
+        //automatically injected with the required dependencies
         RoomProviderModule().provide()
         LectureProviderModule().provide()
         
@@ -178,11 +188,13 @@ final class Lector {
     var lectureProvidable: LectureProvidable?
 
     init() {
+        //That's how you say, what dependencies you need
         Injector.shared.inject(self)
             .with(RoomProvidable.self)
             .with(LectureProvidable.self)
     }
 
+    //this is required, because that's how the Injector assigns the dependencies
     func inject(inject: Any) {
         if let inject = inject as? RoomProvidable {
             roomProvidable = inject
