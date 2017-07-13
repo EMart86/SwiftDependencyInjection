@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol Injectable: class {
-    func inject<T>(inject: T)
+    func inject(inject: Any)
 }
