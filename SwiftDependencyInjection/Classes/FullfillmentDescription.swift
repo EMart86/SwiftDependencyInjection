@@ -78,7 +78,7 @@ final public class DefaultDependency<H>: Dependency {
         return self
     }
     
-    public func tryToResolve() -> Bool {
+    @discardableResult public func tryToResolve() -> Bool {
         guard let parameters = parameters else {
             return true
         }
