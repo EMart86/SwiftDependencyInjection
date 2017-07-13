@@ -222,4 +222,4 @@ final class Lector {
 }
 ```
 
-I'd love to here, if you'd need any further samples or have improovement proposals
+I'd love to hear, if you'd need any further samples or have improovement proposals
