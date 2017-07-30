@@ -222,8 +222,6 @@ final class Lector {
 }
 ```
 
-I'd love to here, if you'd need any further samples or have improovement proposals
-
 ## New in Version 1.2.0
 
 Class Inject<T>
@@ -231,4 +229,10 @@ With only a few lines of code, you can more easily add dependencies
 
 ```swift
 private var fooProvider = Inject<FooProvider>()
+
+...
+
+fooProvider.value
 ```
+
+I'd love to hear, if you'd need any further samples or have improovement proposals
