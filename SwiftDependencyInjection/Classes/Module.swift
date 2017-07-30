@@ -24,10 +24,6 @@ public extension Module {
         Injector.shared + self
     }
     
-    public func inject<T>(inject: T) {
-        delegate?.module(self, didProvide: T.self)
-    }
-    
     public func requires<T>(for type: T.Type) -> FullfillmentDescription? {
         guard self is T else {
             return nil
@@ -41,4 +37,11 @@ public extension Module {
     func canProvide<T>(type: T.Type) -> Bool {
         return self is T
     }
+    
+    func injectAndNotify<T>(_ module: T) {
+        inject(inject: module)
+        delegate?.module(self, didProvide: T.self)
+    }
+    
+    func inject(inject: Any) { }
 }

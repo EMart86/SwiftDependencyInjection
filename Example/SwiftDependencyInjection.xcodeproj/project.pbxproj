@@ -21,6 +21,7 @@
 		580BFE6C1F1740C700AACD08 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE6A1F17407300AACD08 /* Foo.swift */; };
 		580BFE6E1F17419D00AACD08 /* NewObjectCreateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE6D1F17419D00AACD08 /* NewObjectCreateTests.swift */; };
 		580BFE6F1F1741C900AACD08 /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BFE681F17405700AACD08 /* SingletonTests.swift */; };
+		580EB10A1F2E2B7100AEF833 /* InjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580EB1081F2E2A2900AEF833 /* InjectTest.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		580BFE681F17405700AACD08 /* SingletonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonTests.swift; sourceTree = "<group>"; };
 		580BFE6A1F17407300AACD08 /* Foo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
 		580BFE6D1F17419D00AACD08 /* NewObjectCreateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewObjectCreateTests.swift; sourceTree = "<group>"; };
+		580EB1081F2E2A2900AEF833 /* InjectTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectTest.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftDependencyInjection_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDependencyInjection_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				580BFE5E1F12D5D200AACD08 /* DependingDelayedInjectionTests.swift */,
 				580BFE681F17405700AACD08 /* SingletonTests.swift */,
 				580BFE6D1F17419D00AACD08 /* NewObjectCreateTests.swift */,
+				580EB1081F2E2A2900AEF833 /* InjectTest.swift */,
 				580BFE501F12AA4A00AACD08 /* SwiftDependencyInjection_Tests-Bridging-Header.h */,
 			);
 			path = Tests;
@@ -414,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				580BFE6E1F17419D00AACD08 /* NewObjectCreateTests.swift in Sources */,
+				580EB10A1F2E2B7100AEF833 /* InjectTest.swift in Sources */,
 				580BFE6F1F1741C900AACD08 /* SingletonTests.swift in Sources */,
 				580BFE591F12CACE00AACD08 /* CanceInjectionTests.swift in Sources */,
 				580BFE521F12AA4A00AACD08 /* InjectionTests.swift in Sources */,
