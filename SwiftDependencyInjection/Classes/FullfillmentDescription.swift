@@ -86,7 +86,7 @@ final public class DefaultDependency<H>: Dependency {
         var fullfilledParameters = [FullfillmentParameter]()
         for parameter in parameters {
             if let moduleForFullfillment = parameter.moduleForFullfillment {
-                module.inject(inject: moduleForFullfillment)
+                module.injectAndNotify(moduleForFullfillment)
                 fullfilledParameters.append(parameter)
             }
         }

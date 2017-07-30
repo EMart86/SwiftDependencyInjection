@@ -32,7 +32,7 @@ final class Test2Module: Module, String2Providable {
         return Test2Module.defaultText
     }
     
-    func inject<T>(inject: T) {
+    func inject(inject: Any) {
         if let inject = inject as? StringProvidable {
             providable = inject
         }

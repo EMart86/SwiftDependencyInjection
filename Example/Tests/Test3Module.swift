@@ -15,8 +15,8 @@ protocol String3Providable {
 
 final class Test3Module: Module, String3Providable {
     weak var delegate: ModuleDelegate?
-    var providable: StringProvidable?
-    var providable2: String2Providable?
+    var providable = Inject<StringProvidable>()
+    var providable2 = Inject<String2Providable>()
     static let defaultText = "Provideable could'nt be inferred"
     
     init() {
@@ -26,19 +26,10 @@ final class Test3Module: Module, String3Providable {
     }
     
     var test: String {
-        if let providable = providable,
-            let providable2 = providable2 {
+        if let providable = providable.value,
+            let providable2 = providable2.value {
             return "\(providable.test) \(providable2.test) - 3"
         }
         return Test2Module.defaultText
-    }
-    
-    func inject<T>(inject: T) {
-        if let inject = inject as? StringProvidable {
-            providable = inject
-        }
-        if let inject = inject as? String2Providable {
-            providable2 = inject
-        }
     }
 }
