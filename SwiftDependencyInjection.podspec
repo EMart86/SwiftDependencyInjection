@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftDependencyInjection'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'A dependency Injection Framework in Swift'
 
 # This description is used to generate tags and improve search results.
