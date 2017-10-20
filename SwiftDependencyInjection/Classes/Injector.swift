@@ -69,7 +69,7 @@ open class Injector: InjectionHolderDelegate, ModuleDelegate {
     
     public func module<T>(for type: T.Type) -> Module? {
         guard let dependencies = dependencies else {
-            return nil
+            return modules.first(where: {$0 is T})
         }
         let filteredDependencies = dependencies.filter({ $0.conforms(to: T.self) })
         if filteredDependencies.isEmpty {
