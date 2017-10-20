@@ -54,8 +54,7 @@ Use a protocol (here FooProvider) to help to communicate and request injection t
 2) Requesting the implementations of the protocol (e.g. in your ViewController or in any other viewmodels):
 
 ```
-Injector.shared.inject(self)
-.with(FooProvider.self)
+Injector.shared.inject(self).with(FooProvider.self)
 ```
 
 This helps the injector to provide you the required dependencies. Add .with(...Provider.self) to request more dependencies.
