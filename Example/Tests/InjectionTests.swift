@@ -34,9 +34,8 @@ class InjectionTests: XCTestCase, Injectable {
     }
     
     func inject<T>(inject: T) {
-        if let inject = inject as? StringProvidable {
+        if inject is StringProvidable {
             expectation?.fulfill()
         }
     }
-    
 }
