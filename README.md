@@ -101,7 +101,7 @@ enum Room: Int {
     case lectureHall = 50
     case auditorium = 300
 
-    statuc func for(_ numberOfStudents: Int) -> Room? {
+    static func for(_ numberOfStudents: Int) -> Room? {
         if numberOfStudents <= Room.lectureRoom.rawValue {
             return .lectureRoom
         }
