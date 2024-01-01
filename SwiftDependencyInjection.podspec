@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftDependencyInjection'
-  s.version          = '1.2.1'
+  s.version          = '1.3'
   s.summary          = 'A dependency Injection Framework in Swift'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Have you ever struggled withe dependency injection framework in swift. Here is o
   s.source           = { :git => 'https://github.com/EMart86/SwiftDependencyInjection.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'SwiftDependencyInjection/Classes/**/*'
 end
