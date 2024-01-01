@@ -1,0 +1,6 @@
+framework module SwiftDependencyInjection {
+  umbrella header "SwiftDependencyInjection-umbrella.h"
+
+  export *
+  module * { export * }
+}
