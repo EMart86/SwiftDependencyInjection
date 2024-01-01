@@ -12,7 +12,7 @@ public protocol FullfillmentDescription {
     @discardableResult func this<T>(_ type: T.Type) -> FullfillmentDescription
 }
 
-public protocol DependencyDelegate: class {
+public protocol DependencyDelegate: AnyObject {
     func didResolve<T>(dependency: Dependency, canProvide type: T.Type)
 }
 
@@ -38,7 +38,7 @@ extension Dependency {
     }
 }
 
-public protocol FullfillmentParameter: class {
+public protocol FullfillmentParameter: AnyObject {
     var moduleForFullfillment: Module? { get }
     func requires<T>(_ type: T.Type) -> Bool
 }
@@ -105,7 +105,7 @@ final public class DefaultDependency<H>: Dependency {
     }
     
     private func remove(_ parameter: FullfillmentParameter) {
-        guard let index = parameters?.index(where: { return $0 === parameter } ) else {
+        guard let index = parameters?.firstIndex(where: { return $0 === parameter } ) else {
             return
         }
         parameters?.remove(at: index)

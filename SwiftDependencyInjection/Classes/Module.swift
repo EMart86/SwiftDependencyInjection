@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol ModuleDelegate: class {
+public protocol ModuleDelegate: AnyObject {
     func module<T>(_ module: Module, didProvide type: T.Type)
 }
 
-public protocol Module: class, Injectable {
+public protocol Module: AnyObject, Injectable {
     var delegate: ModuleDelegate? { get set }
     func canProvide<T>(type: T.Type) -> Bool
     func provide()

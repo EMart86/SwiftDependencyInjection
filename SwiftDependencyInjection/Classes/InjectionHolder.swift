@@ -1,12 +1,12 @@
 import Foundation
 
-public protocol InjectionHolderDelegate: class {
+public protocol InjectionHolderDelegate: AnyObject {
     func didStore(holder: InjectionHolder)
     func didFinishInjecting(holder: InjectionHolder)
     func didUpdate<T>(module: Module, with type: T.Type)
 }
 
-public protocol InjectionHolder: class, InjectionHolderDelegate {
+public protocol InjectionHolder: AnyObject, InjectionHolderDelegate {
     var delegate: InjectionHolderDelegate? { get set }
     var injectable: Injectable { get }
     
