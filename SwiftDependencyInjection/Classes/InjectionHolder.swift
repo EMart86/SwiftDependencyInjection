@@ -7,7 +7,7 @@ public protocol InjectionHolderDelegate: class {
 }
 
 public protocol InjectionHolder: class, InjectionHolderDelegate {
-    weak var delegate: InjectionHolderDelegate? { get set }
+    var delegate: InjectionHolderDelegate? { get set }
     var injectable: Injectable { get }
     
     func storeForLaterInjection(holder: InjectionHolder)

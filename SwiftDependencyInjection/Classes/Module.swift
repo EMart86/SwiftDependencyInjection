@@ -13,7 +13,7 @@ public protocol ModuleDelegate: class {
 }
 
 public protocol Module: class, Injectable {
-    weak var delegate: ModuleDelegate? { get set }
+    var delegate: ModuleDelegate? { get set }
     func canProvide<T>(type: T.Type) -> Bool
     func provide()
     func requires<T>(for type: T.Type) -> FullfillmentDescription?

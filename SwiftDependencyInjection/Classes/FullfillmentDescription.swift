@@ -20,7 +20,7 @@ public protocol Dependency: FullfillmentDescription {
     var isResolved: Bool { get }
     var parameters: [FullfillmentParameter]? { get }
     var module: Module { get }
-    weak var delegate: DependencyDelegate? { get set }
+    var delegate: DependencyDelegate? { get set }
     
     @discardableResult func tryToResolve() -> Bool
     func didProvide<T>(type: T.Type)
